@@ -1,0 +1,49 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Confirmation section styles */
+.confirmation {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.confirmation h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.confirmation p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.confirmation .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.confirmation .btn:hover {
+    background-color: #555;
+}

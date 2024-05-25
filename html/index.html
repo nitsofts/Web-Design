@@ -3,28 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SydRent - Sydney Car Rental</title>
-    <link rel="icon" href="/images/Logo - FavIcon.png" type="image/png">
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Sydney Car Rental</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
 </head>
 <body>
-    <main>
-        <div id="container">
-            <header>
-                <img src="/images/Header Logo.png" alt="header-logo">
-                <nav>
-                    <ul>
-                        <li>About Us</li>
-                        <li>Services</li>
-                        <li>Gallery</li>
-                        <li>Partner</li>
-                        <li>Career</li>
-                        <li>Reference</li>
-                        <li>Contact</li>
-                    </ul>
-                </nav>
-            </header>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <img src="../Images/Logo - FavIcon.png" alt="Sydney Car Rental Logo">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </main>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Experience Luxury Travel with Sydney Car Rental</h1>
+            <p>Discover our premium car rental services in Sydney and make your journey unforgettable.</p>
+            <a href="../html/reservation.html" class="btn">Book Now</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At Sydney Car Rental, we are committed to providing top-notch car rental services to both local and international customers. With a wide range of luxury vehicles and exceptional customer service, we ensure a seamless travel experience for our clients.</p>
+            <a href="#services" class="btn">Our Services</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service">
+                <img src="../Images/luxury-car.jpg" alt="Luxury Car">
+                <h3>Luxury Car Rentals</h3>
+                <p>Explore our collection of luxury vehicles and elevate your travel experience.</p>
+            </div>
+            <!-- Add more service sections as needed -->
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2>Book Your Ride</h2>
+            <!-- Add booking form or call-to-action button here -->
+            <a href="#" class="btn">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <p>Contact us: info@sydneycarrental.com | Phone: +123456789</p>
+            <ul class="social-links">
+                <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
 </html>
