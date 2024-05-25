@@ -14,10 +14,17 @@ body {
 
 /* Container styles */
 .container {
-    max-width: 1200px;
+    display: flex;
+    justify-content: space-between; /* horizontal center */
+    align-items: center;    /* vertical center */
+    height: 10vh;
+    
+    
+    /* max-width: 1200px; */
     margin: 0 auto;
     padding: 0 20px;
 }
+
 
 /* Header styles */
 header {
