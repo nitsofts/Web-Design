@@ -7,14 +7,15 @@ body {
 header {
     background-color: #007bff;
     color: white;
-    padding: 10px 0;
+    padding: 50px 0;
     text-align: center;
 }
 
 header nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    text-decoration-color: #007bff;
+    padding: 20;
+    margin: 10;
     display: flex;
     justify-content: center;
 }
@@ -30,17 +31,22 @@ header nav ul li a {
 }
 
 .container {
+    color:  rgb(21, 19, 19);
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
 
 h2, h3 {
+
     text-align: center;
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 40px;
+    color: rgb(3, 3, 4);
+    font-weight: italic;
+    font-size: large;
 }
 
 label {
@@ -52,8 +58,8 @@ input[type="text"],
 input[type="date"],
 input[type="month"],
 select {
-    width: 100%;
-    padding: 8px;
+    width: 50%;
+    padding: 20px;
     box-sizing: border-box;
 }
 
@@ -62,8 +68,8 @@ button {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
-    color: #fff;
-    border: none;
+    color: #110f0f;
+    border:#007bff;
     cursor: pointer;
     margin-top: 10px;
 }
@@ -74,6 +80,7 @@ button:hover {
 
 #total-price {
     font-weight: bold;
+    color: black;
 }
 
 #payment-section {
@@ -81,7 +88,7 @@ button:hover {
 }
 
 footer {
-    background-color: #f1f1f1;
+    background-color: #050505;
     text-align: center;
     padding: 10px 0;
     position: fixed;

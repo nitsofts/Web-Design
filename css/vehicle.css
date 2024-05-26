@@ -1,0 +1,36 @@
+/* vehicle.css */
+
+.car-details {
+    padding: 20px;
+    text-align: center;
+}
+
+.car-details img {
+    width: 80%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.car-actions {
+    margin-top: 20px;
+}
+
+.car-actions button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.car-actions button:hover {
+    background-color: #0056b3;
+}
+
+.car-actions button:focus {
+    outline: none;
+}

@@ -1,0 +1,17 @@
+/* Styles for Services Page */
+.services {
+    padding: 50px 0;
+}
+
+.service {
+    margin-bottom: 30px;
+}
+
+.service h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.service p {
+    color: #666;
+}

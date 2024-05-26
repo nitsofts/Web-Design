@@ -5,25 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SydRent - Sydney Car Rental</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" href="/images/Logo - FavIcon.png" type="image/png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../Images/Logo - FavIcon.png" type="image/png">
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="header-left">
-            <img src="/images/Header Logo.png" alt="header-logo">
+            <img src="../Images/Header Logo.png" alt="header-logo">
         </div>
         <div class="header-right">
             <nav>
                 <ul>
-                    <li>About Us</li>
-                    <li>Services</li>
-                    <li>Gallery</li>
+                    <a href="../html/about.html" class="btn">About Us</a>
+                    <a href="../html/services.html" class="btn">Our Services</a>
+                    <a href="../html/gallery.html" class="btn">Gallery</a>
                     <li>Partner</li>
-                    <li>Career</li>
+                    <a href="../html/career.html" class="btn">Career</a>
                     <li>Reference</li>
-                    <li>Contact</li>
+                    <a href="../html/contact.html" class="btn">Contact</a>
                 </ul>
             </nav>
         </div>
@@ -34,38 +34,44 @@
         <div class="container">
             <h1>Experience Luxury Travel with Sydney Car Rental</h1>
             <p>Discover our premium car rental services in Sydney and make your journey unforgettable.</p>
+            <h2>Book Your Ride</h2>
             <a href="../html/reservation.html" class="btn">Book Now</a>
         </div>
     </section>
+
 
     <!-- About Us Section -->
     <section id="about" class="about">
         <div class="container">
             <h2>About Us</h2>
             <p>At Sydney Car Rental, we are committed to providing top-notch car rental services to both local and international customers. With a wide range of luxury vehicles and exceptional customer service, we ensure a seamless travel experience for our clients.</p>
-            <a href="#services" class="btn">Our Services</a>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- Gallery Preview Section -->
+    <section class="services">
         <div class="container">
-            <h2>Our Services</h2>
+            <h1>Our Services</h1>
             <div class="service">
-                <img src="../Images/luxury-car.jpg" alt="Luxury Car">
-                <h3>Luxury Car Rentals</h3>
-                <p>Explore our collection of luxury vehicles and elevate your travel experience.</p>
+                <li><h1>Car Rentals</h1></li>
+                <li><h1>Airport Transfer</h1></li>
+                <a href="../html/services.html" class="btn">More</a>
             </div>
-            <!-- Add more service sections as needed -->
+            
+            <!-- Add more services as needed -->
         </div>
     </section>
 
-    <!-- Booking Section -->
-    <section id="booking" class="booking">
         <div class="container">
-            <h2>Book Your Ride</h2>
-            <!-- Add booking form or call-to-action button here -->
-            <a href="#" class="btn">Book Now</a>
+            <h2>Our Cars</h2>
+            <div class="gallery-preview-content">
+                <div class="featured-image">
+                    <img src="../images/car1.jpg" alt="Featured Car">
+                </div>
+                <div class="more-gallery">
+                    <a href="gallery.html" class="btn">More Cars</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -80,6 +86,5 @@
             </ul>
         </div>
     </footer>
-
 </body>
 </html>

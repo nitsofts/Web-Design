@@ -3,10 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cars - SydRent</title>
-    <link rel="icon" href="/images/Logo - FavIcon.png" type="image/png">
+    <title>Car Details - Sydney Car Rental</title>
+    <link rel="stylesheet" href="../css/vehicle.css"> 
+    <link rel="stylesheet" href="../css/style.css"> <!-- Link to your CSS file for styling -->
+    <!-- Link to your vehicle-specific CSS -->
 </head>
 <body>
-    
+    <header>
+        <div class="header-left">
+            <img src="../Images/Header Logo.png" alt="header-logo">
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <a href="../html/index.html" class="btn">Home</a>
+
+                    <a href="../html/about.html" class="btn">About Us</a>
+                    <a href="../html/services.html" class="btn">Our Services</a>
+                    <a href="../html/gallery.html" class="btn">Gallery</a>
+                    <li>Partner</li>
+                    <a href="../html/career.html" class="btn">Career</a>
+                    <li>Reference</li>
+                    <a href="../html/contact.html" class="btn">Contact</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="car-details">
+        <div class="container">
+            <h1>Car Details</h1>
+            <div id="car-details-content">
+                <!-- Car details will be dynamically loaded here -->
+            </div>
+            <div class="car-actions">
+                <button id="book-now-button">Book Now</button>
+                <button id="back-button">Back</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <script src="../js/vehicle.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>

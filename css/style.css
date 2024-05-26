@@ -1,82 +1,70 @@
-
-/* Reset default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body styles */
+/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
-/* Container styles */
+a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
 .container {
-    display: flex;
-    justify-content: space-between; /* horizontal center */
-    align-items: center;    /* vertical center */
-    height: 10vh;
-    
-    
-    /* max-width: 1200px; */
+    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px 0;
 }
 
+.btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
 
-/* Header styles */
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Header Styles */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
-    color: #000;
-    padding: 50px 50px;
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e7e7e7;
 }
 
-.header-left img {
-    max-width: 30%;
+header .header-left img {
+    width: 150px;
 }
 
-.header-right nav ul {
+header nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0 10px;
-    display: inline;
+    display: flex;
     gap: 20px;
-    font-size: 24px;
-    font-weight: bold;
+    padding: 0;
+    margin: 0;
 }
 
-.header-right nav ul li {
-    display: inline;
-    margin: 0 10px;
+header nav ul li,
+header nav ul a {
+    font-weight: 700;
 }
 
-.header-right nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Hero section styles */
+/* Hero Section Styles */
 .hero {
-    background-image: url('hero-image.jpg');
+    background-image: url('../images/luxury-car.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -84,111 +72,86 @@ nav ul li a {
     padding: 100px 0;
 }
 
-.hero h1 {
-    font-size: 36px;
+.hero .container h1 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-.hero p {
-    font-size: 18px;
+.hero .container p {
+    font-size: 1.2rem;
     margin-bottom: 30px;
 }
 
-/* About section styles */
+/* About Us Section Styles */
 .about {
-    padding: 100px 0;
+    padding: 60px 0;
+    background-color: #f4f4f4;
+    text-align: center;
 }
 
 .about h2 {
-    font-size: 28px;
-    margin-bottom: 30px;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 .about p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 30px;
-}
-
-/* Services section styles */
-.services {
-    padding: 100px 0;
-}
-
-.services h2 {
-    font-size: 28px;
-    margin-bottom: 30px;
-}
-
-.service {
-    margin-bottom: 30px;
-}
-
-.service img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-.service h3 {
-    font-size: 24px;
-    margin-top: 20px;
-}
-
-.service p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
-/* Booking section styles */
-.booking {
-    background-color: #fff;
+/* Gallery Preview Section Styles */
+.gallery-preview {
+    padding: 60px 0;
+}
+
+.gallery-preview h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
     text-align: center;
-    padding: 100px 0;
+}
+
+.gallery-preview .gallery-preview-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.gallery-preview .featured-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-preview .featured-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Booking Section Styles */
+/* Book Now Section Styles */
+.booking {
+    padding: 60px 0;
+    text-align: center;
+    background-image: url('../images/book-now-background.jpg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Ensure the text is readable on the background */
 }
 
 .booking h2 {
-    font-size: 28px;
-    margin-bottom: 30px;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-.btn {
-    display: inline-block;
-    background-color: #333;
-    color: #fff;
+.booking .btn {
+    background-color: rgb(202, 164, 164);
+    color:black;
     padding: 10px 20px;
-    text-decoration: none;
     border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #555;
-}
-
-/* Footer styles */
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.footer p {
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.social-links {
-    list-style-type: none;
-}
-
-.social-links li {
-    display: inline;
-    margin-right: 10px;
-}
-
-.social-links li a img {
-    width: 30px;
-    height: auto;
+.booking .btn:hover {
+    background-color: #0fe7a3;
 }

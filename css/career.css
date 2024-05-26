@@ -1,0 +1,31 @@
+/* Styles for Careers Page */
+.careers {
+    padding: 50px 0;
+}
+
+.job {
+    margin-bottom: 30px;
+}
+
+.job h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.job p {
+    color: #666;
+}
+
+.job button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.job button:hover {
+    background-color: #0056b3;
+}
