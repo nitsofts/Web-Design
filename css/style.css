@@ -20,6 +20,8 @@ a:hover {
     width: 100%;
     margin: 0 auto; /* This centers the container horizontally */
     box-sizing: border-box;
+    padding: 33px 9%;
+    font-size: 2rem;
 }
 
 .btn {
@@ -84,10 +86,15 @@ header nav ul a {
 /* Featured Section Styles */
 .featured-section {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 33px 9%;
+    padding: 100px 9%;
     background-color: #f4f4f4;
+}
+
+.featured-container{
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
 }
 
 .featured-content h1 {
@@ -132,12 +139,15 @@ header nav ul a {
     justify-content: space-between;
     align-items: center;
     width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the search bar horizontally */
 }
 
 .search-bar select{
     border-radius: 5px;
     stroke: none;
     padding: 10px;
+    font-size: large;
+
 }
 
 .search-bar input {
@@ -155,10 +165,19 @@ header nav ul a {
     color: white;
     border-radius: 5px 5px 5px 5px;
     cursor: pointer;
+    font-size: large;
 }
 
 .search-bar button:hover {
     background-color: #0056b3;
+}
+
+.choose-us{
+    padding: 33px 9%;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2.5rem;
 }
 
 /* About Us Section Styles */

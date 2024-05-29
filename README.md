@@ -18,6 +18,7 @@ Last Changes:
 
 Nitesh:
 1) Optimized Ujjwal's changes and fixed header part with our requirement. (2:03 AM, Sunday)
+2) Fixed About Us page and CSS file.
 
 Ujjwal:
 1) added some content on index page and creating booking and create js, confirmation.html and css file and work on booking
