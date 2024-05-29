@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Sydney Car Rental</title>
+    <title>Gallery - SydRent</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/gallery.css">
-    <link rel="stylesheet" href="../css/style.css"> <!-- Link to your CSS file for styling -->
-    <!-- Link to your CSS file for styling -->
+    <link rel="icon" href="../Images/Logo - FavIcon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <div class="header-left">
             <img src="../Images/Header Logo.png" alt="header-logo">
@@ -16,50 +19,72 @@
         <div class="header-right">
             <nav>
                 <ul>
-                    <a href="../html/index.html" class="btn">Home</a>
-
-                    <a href="../html/about.html" class="btn">About Us</a>
-                    <a href="../html/services.html" class="btn">Our Services</a>
-                    <a href="../html/gallery.html" class="btn">Gallery</a>
-                    <li>Partner</li>
-                    <a href="../html/career.html" class="btn">Career</a>
-                    <li>Reference</li>
-                    <a href="../html/contact.html" class="btn">Contact</a>
+                    <a href="/html/about.html">About Us</a>
+                    <a href="/html/services.html">Our Services</a>
+                    <a href="/html/gallery.html">Gallery</a>
+                    <a href="/html/partner.html">Partners</a>
+                    <a href="/html/career.html">Career</a>
+                    <a href="/html/reference.html">Reference</a>
+                    <a href="/html/contact.html" class="header-btn-contact">Contact Us: +61488139521</a>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Main Content Section -->
-    <section class="gallery">
-        <div class="container">
-            <h1>Gallery</h1>
-            <div class="gallery-images">
-                <figure class="gallery-item" data-car="car1">
-                    <img src="../Images/car1.jpg" alt="Car 1">
-                    <figcaption>Car 1 - Sedan</figcaption>
-                    <span class="hover-message">Click for more information</span>
-                </figure>
-                <figure class="gallery-item" data-car="car2">
-                    <img src="../Images/car2.jpg" alt="Car 2">
-                    <figcaption>Car 2 - SUV</figcaption>
-                    <span class="hover-message">Click for more information</span>
-                </figure>
-                <figure class="gallery-item" data-car="car3">
-                    <img src="../Images/car3.jpg" alt="Car 3">
-                    <figcaption>Car 3 - Luxury</figcaption>
-                    <span class="hover-message">Click for more information</span>
-                </figure>
-                <!-- Add more figures with images and descriptions here -->
+    <main>
+        <section class="gallery">
+            <div class="container">
+                <h1>Gallery</h1>
+                <div class="gallery-images">
+                    <figure class="gallery-item" data-car="car1">
+                        <img src="../Images/car1.jpg" alt="Car 1">
+                        <figcaption>Car 1 - Sedan</figcaption>
+                        <span class="hover-message">Click for more information</span>
+                    </figure>
+                    <figure class="gallery-item" data-car="car2">
+                        <img src="../Images/car2.jpg" alt="Car 2">
+                        <figcaption>Car 2 - SUV</figcaption>
+                        <span class="hover-message">Click for more information</span>
+                    </figure>
+                    <figure class="gallery-item" data-car="car3">
+                        <img src="../Images/car3.jpg" alt="Car 3">
+                        <figcaption>Car 3 - Luxury</figcaption>
+                        <span class="hover-message">Click for more information</span>
+                    </figure>
+                    <!-- Add more figures with images and descriptions here -->
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer Section -->
     <footer>
-        <!-- Footer content -->
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://google.com"><i class="fab fa-google-plus"></i></a>
+                <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/html/index.html">Home</a></li>
+                    <li><a href="/html/about.html">About Us</a></li>
+                    <li><a href="/html/services.html">Services</a></li>
+                    <li><a href="/html/gallery.html">Gallery</a></li>
+                    <li><a href="/html/partner.html">Partners</a></li>
+                    <li><a href="/html/career.html">Career</a></li>
+                    <li><a href="/html/reference.html">Reference</a></li>
+                </ul>
+            </nav>
+            <div class="footer-credits">
+                <p>Copyright ©2024, Designed by SydRent</p>
+            </div>
+        </div>
     </footer>
-
+    <!-- LinkingJS File -->
     <script src="../js/gallery.js"></script> <!-- Link to your JS file for handling the click event -->
 </body>
 </html>
+

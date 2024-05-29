@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Details - Sydney Car Rental</title>
+    <title>Partners - SydRent</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/vehicle.css"> 
-    <link rel="stylesheet" href="../css/style.css"> <!-- Link to your CSS file for styling -->
-    <!-- Link to your vehicle-specific CSS -->
+    <link rel="icon" href="../Images/Logo - FavIcon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <div class="header-left">
             <img src="../Images/Header Logo.png" alt="header-logo">
@@ -16,37 +19,60 @@
         <div class="header-right">
             <nav>
                 <ul>
-                    <a href="../html/index.html" class="btn">Home</a>
-
-                    <a href="../html/about.html" class="btn">About Us</a>
-                    <a href="../html/services.html" class="btn">Our Services</a>
-                    <a href="../html/gallery.html" class="btn">Gallery</a>
-                    <li>Partner</li>
-                    <a href="../html/career.html" class="btn">Career</a>
-                    <li>Reference</li>
-                    <a href="../html/contact.html" class="btn">Contact</a>
+                    <a href="/html/about.html">About Us</a>
+                    <a href="/html/services.html">Our Services</a>
+                    <a href="/html/gallery.html">Gallery</a>
+                    <a href="/html/partner.html">Partners</a>
+                    <a href="/html/career.html">Career</a>
+                    <a href="/html/reference.html">Reference</a>
+                    <a href="/html/contact.html" class="header-btn-contact">Contact Us: +61488139521</a>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="car-details">
-        <div class="container">
-            <h1>Car Details</h1>
-            <div id="car-details-content">
-                <!-- Car details will be dynamically loaded here -->
+    <main>
+        <!-- Contents Starts From Here-->
+        <section class="car-details">
+            <div class="container">
+                <h1>Car Details</h1>
+                <div id="car-details-content">
+                    <!-- Car details will be dynamically loaded here -->
+                </div>
+                <div class="car-actions">
+                    <button id="book-now-button">Book Now</button>
+                    <button id="back-button">Back</button>
+                </div>
             </div>
-            <div class="car-actions">
-                <button id="book-now-button">Book Now</button>
-                <button id="back-button">Back</button>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://google.com"><i class="fab fa-google-plus"></i></a>
+                <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/html/index.html">Home</a></li>
+                    <li><a href="/html/about.html">About Us</a></li>
+                    <li><a href="/html/services.html">Services</a></li>
+                    <li><a href="/html/gallery.html">Gallery</a></li>
+                    <li><a href="/html/partner.html">Partners</a></li>
+                    <li><a href="/html/career.html">Career</a></li>
+                    <li><a href="/html/reference.html">Reference</a></li>
+                </ul>
+            </nav>
+            <div class="footer-credits">
+                <p>Copyright ©2024, Designed by SydRent</p>
             </div>
         </div>
-    </section>
-
-    <footer>
-        <!-- Footer content -->
     </footer>
-
     <script src="../js/vehicle.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>
