@@ -193,6 +193,48 @@ header nav ul a {
 .choose-us p {
     margin: 0 0 30px 0; /* Add some margin to separate the heading from the grid */
 }
+/*partner page*/
+/* Partner Section Styles */
+
+.partner-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-content: center;
+}
+.partner {
+    width: 3150px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #f45a5a;
+    border-radius: 5%;
+    padding: 20px 20px;
+    
+}
+
+.partner img {
+    transition: transform 0.3s;
+}
+
+/*.partner {
+    display: flex;
+    background-color: #fff;
+    padding: 50px 100px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #f45a5a;
+    border-radius: 5%;
+}*/
+
+.partner img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
 
 /* About Us Section Styles */
 .about {
