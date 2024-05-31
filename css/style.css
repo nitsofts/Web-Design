@@ -111,6 +111,11 @@ header nav ul a {
     margin-bottom: 10px;
 }
 
+.featured-car-image {
+    width: 100%;
+    height: auto;
+}
+
 .featured-content .car-price {
     font-size: 1.25rem;
     margin-bottom: 20px;
@@ -378,7 +383,7 @@ header nav ul a {
     justify-content: center;
 }
 .partner {
-    width: 3150px;
+    width: 150px;
     height: auto;
     display: flex;
     justify-content: center;
@@ -525,6 +530,221 @@ nav ul li a {
 }
 
 
-@media only screen and (max-width: 600px) {
+/* Media Queries */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
     
+    header {
+        padding: 10px; 
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header-left,
+    .header-right {
+        display: block;
+        text-align: center; 
+    }
+    .header-right nav ul {
+        display: block;
+        margin-top: 10px; 
+    }
+    .header-btn-contact {
+        display: block;
+        margin: 10px auto 0;
+    }
+
+    .container {
+        padding: 5px 5%;
+        font-size: 1rem;
+    }
+
+   
+       
+   
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .featured-section {
+        flex-direction: column;
+        padding: 50px 5%;
+    }
+
+    .featured-content h1 {
+        font-size: 2rem;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .choose-us {
+        font-size: 1.5rem;
+    }
+
+    .choose-us-grid {
+        flex-direction: column;
+    }
+
+    .ratings {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .reviews {
+        padding: 10px;
+    }
+    .featured-car-image {
+        height: auto;
+    }
+
+    footer {
+        padding: 10px; 
+    }
+    .social-icons {
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-credits {
+        text-align: center; 
+    }
+    
+}
+
+/* Small devices*/
+@media (min-width: 600px) {
+    .container {
+        padding: 5px 7%;
+        font-size: 1.5rem;
+    }
+
+    header {
+        padding: 20px 7%;
+    }
+
+    .featured-section {
+        flex-direction: column;
+        padding: 50px 7%;
+    }
+
+    .featured-content h1 {
+        font-size: 3rem;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .choose-us {
+        font-size: 2rem;
+    }
+
+    .choose-us-grid {
+        flex-direction: column;
+    }
+
+    .ratings {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .reviews {
+        padding: 10px;
+    }
+    .featured-car-image {
+        /* Adjust the height or any other properties as needed for smaller screens */
+        height: auto;
+    }
+
+    .partners .container {
+        padding: 10px; /* Adjust container padding for smaller screens */
+    }
+    .partner-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center align partner logos */
+    }
+    .partner {
+        flex: 0 0 100%; /* Take full width to display one partner per row */
+       
+    }
+    .partner img {
+        width: 100%; /* Ensure partner logos fill the container */
+        max-width: 150px; /* Set a maximum width for partner logos */
+        height: auto;
+        margin: auto; /* Center align partner logos */
+    }
+}
+
+/* Tablets (landscape) */
+@media (min-width: 768px) and (max-width: 1023.98px) {
+    .container {
+        padding: 10px 10%;
+        font-size: 1.8rem;
+    }
+
+    header {
+        padding: 20px 10%;
+    }
+
+    .featured-section {
+        flex-direction: row;
+        padding: 50px 10%;
+    }
+
+    .featured-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .search-bar {
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .choose-us {
+        font-size: 2.5rem;
+    }
+    .partner {
+        flex: 0 0 33.33%; /* Display three partners per row */
+    }
+}
+
+/* Desktops */
+@media (min-width: 1024px) {
+    .container {
+        padding: 15px 15%;
+        font-size: 2rem;
+    }
+
+    header {
+        padding: 30px 15%;
+    }
+
+    .featured-section {
+        flex-direction: row;
+        padding: 50px 15%;
+    }
+
+    .featured-content h1 {
+        font-size: 4rem;
+    }
+
+    .search-bar {
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .choose-us {
+        font-size: 3rem;
+    }
+    .partner {
+        flex: 0 0 25%; 
+    }
 }
