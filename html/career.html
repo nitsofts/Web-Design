@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Career - SydRent</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Careers - SydRent</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/career.css">
     <link rel="icon" href="../Images/Logo - FavIcon.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Header Section -->
@@ -15,7 +14,7 @@
         <div class="header-left">
             <a href="../html/index.html">
                 <img src="../Images/Header Logo.png" alt="header-logo">
-                </a>
+            </a>
         </div>
         <div class="header-right">
             <nav>
@@ -31,27 +30,84 @@
             </nav>
         </div>
     </header>
-
     <main>
-        <!-- Contents Starts From Here-->
-        <section class="careers">
-            <div class="container">
-                <h1>Careers</h1>
-                <p>We're always looking for talented individuals to join our team. Check out our current job openings below:</p>
-                <div class="job">
-                    <h2>Car Rental Agent</h2>
-                    <p>We're seeking a customer-oriented individual to assist customers with their rental needs.</p>
-                    <button class="btn">Apply Now</button>
+        <div class="team">
+            <h1>Join the Team</h1>
+            <p class ="lead">Relaxed Atmosphere, Best Working Environment, Top Notch Projects...</p>
+        </div>
+        <!-- Available Jobs Section -->
+        <div class="available-jobs">
+            <h2>Available Jobs</h2>
+            <div class="job-filters">
+                <!-- Location filter dropdown or checkboxes -->
+                <select id="location-filter">
+                    <option value="all">All Locations</option>
+                    <option value="sydney">Sydney</option>
+                    <option value="melbourne">Melbourne</option>
+                    <option value="perth">Perth</option>
+                    <option value="canberra">Canberra</option>
+                </select>
+                
+                <div id="job-listings">
+                    <div class="job-listing" data-location="sydney">
+                        <h3>Full Stack Developer</h3>
+                        <p>Location: Sydney</p>
+                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consequat.</p>
+                    </div>
+                    
+                    <div class="job-listing" data-location="melbourne">
+                        <h3>iOS/Swift Developer</h3>
+                        <p>Location: Melbourne</p>
+                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consequat.</p>
+                    </div>
+                    
+                    <div class="job-listing" data-location="perth">
+                        <h3>JavaScript Developer</h3>
+                        <p>Location: Perth</p>
+                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consequat.</p>
+                    </div>
+                    
+                    <div class="job-listing" data-location="canberra">
+                        <h3>Ruby on Rails Programmer</h3>
+                        <p>Location: Canberra</p>
+                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consequat.</p>
+                    </div>
+                    
                 </div>
-                <div class="job">
-                    <h2>Vehicle Technician</h2>
-                    <p>We're hiring skilled technicians to maintain and repair our rental fleet.</p>
-                    <button class="btn">Apply Now</button>
-                </div>
-                <!-- Add more job listings as needed -->
+                 
+                 
             </div>
-        </section>
+        </div>
+    
+        <!-- Perks Section -->
+        <div class="perks">
+            <h2>Perks</h2>
+            <ul>
+                <li>Flexible Work Hours</li>
+                <li>Healthcare</li>
+                <li>Room to Grow</li>
+                <!-- Add more perks here -->
+            </ul>
+        </div>
+        <div class="locations">
+            <h2>Our Locations</h2>
+            <div class="location-content"></div>
+        </div>
+    
+        <script>
+            window.onload = function() {
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', '../html/locations.html', true);
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        document.querySelector('.location-content').innerHTML = xhr.responseText;
+                    }
+                };
+                xhr.send();
+            };
+        </script>
     </main>
+    
 
     <!-- Footer Section -->
     <footer>
@@ -75,10 +131,10 @@
                 </ul>
             </nav>
             <div class="footer-credits">
-                <p>Copyright ©2024, Designed by SydRent</p>
+                <p>&copy; 2024, Designed by SydRent</p>
             </div>
         </div>
     </footer>
+    <script src="../js/career.js"></script>
 </body>
 </html>
-

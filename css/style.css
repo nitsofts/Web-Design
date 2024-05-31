@@ -195,37 +195,36 @@ header nav ul a {
 }
 /*partner page*/
 /* Partner Section Styles */
-
-.partner-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    justify-content: center;
+.partner-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to multiple lines */
+    gap: 15px;
+    justify-content: center; /* Center align all items */
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
+
 .partner {
-    width: 3150px;
-    height: auto;
+    width: 300px; /* Increased width for a more rectangular shape */
+    height: 200px; /* Increased height for a more rectangular shape */
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #f45a5a;
-    border-radius: 5%;
-    padding: 20px 20px;
-    
+    border: 3px solid #f45a5a;
+    border-radius: 10%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .partner img {
+    height: 100px; /* Increased height for the logos */
+    max-width: 100%;
     transition: transform 0.3s;
+    border-radius: 7%;
 }
 
-/*.partner {
-    display: flex;
-    background-color: #fff;
-    padding: 50px 100px;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #f45a5a;
-    border-radius: 5%;
-}*/
+
+
 
 .partner img:hover {
     transform: scale(1.05);
@@ -253,6 +252,32 @@ header nav ul a {
     line-height: 1.5;
 }
 
+/*for location */
+#map {
+    height: 400px;
+    width: 300%; /* Adjust the width as needed */
+    float:right;
+    margin-top: 20px;
+}
+
+/* Additional CSS for main content */
+.content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px
+}
+
+/* Additional CSS for map screenshot */
+.map img {
+    width: 500px;
+    height: 300px;
+    margin-top: 20px;
+    border: 1px solid #ddd; /* Add border for visual separation (optional) */
+    border-radius: 5px; /* Add border-radius for rounded corners (optional) */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box-shadow for depth effect (optional) */
+}
 /* Gallery Preview Section Styles */
 .gallery-preview {
     padding: 60px 0;
@@ -363,3 +388,140 @@ nav ul li a {
     text-align: center;
     padding: 10px 0px;
 }
+/* Career Page Styles */
+
+/* Hero Section */
+.career-hero {
+    background: url('../Images/career-banner.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.career-hero .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+/* Job Listings */
+.job-listing {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.job-listing h3 {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+/* Application Process */
+#application-process ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+/* FAQs */
+#faqs details {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#faqs details summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Contact Us */
+#contact form {
+    margin-bottom: 20px;
+}
+
+#contact form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact form textarea {
+    height: 150px;
+}
+
+#contact form button {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact form button:hover {
+    background-color: #d35400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .job-listing {
+        padding: 15px;
+    }
+
+    #application-process ol {
+        margin-left: 0;
+    }
+
+    #faqs details {
+        padding: 15px;
+    }
+
+    #contact form input[type="text"],
+    #contact form input[type="email"],
+    #contact form textarea {
+        width: calc(100% - 20px);
+    }
+}
+
+/* Booking Section Styles */
+
+.booking {
+    padding: 60px 20px;
+    text-align:justify;
+    color:black; /* Ensure the text is readable on the background */
+}
+
+.booking h2 {
+    font-size: 2rem;
+    margin-bottom: 2px;
+    height: auto;
+    width: auto;
+}
+
+.booking .btn {
+    background-color: #007BFF;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.booking .btn:hover {
+    background-color: #14f02e;
+}
+
