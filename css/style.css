@@ -396,32 +396,70 @@ header nav ul a {
     line-height: 1.5;
 }
 
-/*for location */
-#map {
-    height: 400px;
-    width: 300%; /* Adjust the width as needed */
-    float:right;
-    margin-top: 20px;
+/* Location section styling */
+.location {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
 }
 
-/* Additional CSS for main content */
-.content {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px
+/* Location headings */
+.location h2 {
+
+    margin-bottom: 10px;
+    font-size: 1.5em;
 }
 
-/* Additional CSS for map screenshot */
+.location h3 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+.location ul li {
+    margin-bottom: 10px;
+}
+
+/* Map placeholder styling */
+.map {
+    flex: 1;
+    width: 90%;
+    height: 450px;
+    background-color: #ddd;
+    border-radius: 8px;
+    overflow: hidden;}
+
+/* Image within the map placeholder */
 .map img {
-    width: 500px;
-    height: 300px;
-    margin-top: 20px;
-    border: 1px solid #ddd; /* Add border for visual separation (optional) */
-    border-radius: 5px; /* Add border-radius for rounded corners (optional) */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box-shadow for depth effect (optional) */
+    width: 100%;
+    height: 200%;
+   
 }
+
+/* Temporary information request section */
+.temp {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e9e9e9;
+    border-radius: 8px;
+}
+
+.temp h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+
+/* Link styling */
+.temp a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.temp a:hover {
+    text-decoration: underline;
+}
+
 /* Gallery Preview Section Styles */
 .gallery-preview {
     padding: 60px 0;
