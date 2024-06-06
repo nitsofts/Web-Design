@@ -1,20 +1,8 @@
-function scrollToDoneButton() {
-    var doneButton = document.getElementById('done-button');
-    doneButton.scrollIntoView({ behavior: 'smooth', block: 'center' });
-}
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
 
-var bookingForm = document.getElementById('booking-form');
-
-bookingForm.addEventListener('submit', function(event) {
-    event.preventDefault();
-    
-    window.location.href = "../html/Confirmation.html";
-});
-
-var doneButton = document.getElementById('done-button');
-
-doneButton.addEventListener('click', function() {
-    scrollToDoneButton();
-
-    window.location.href = "../html/index.html";
+    menuToggle.addEventListener('click', () => {
+        navList.classList.toggle('nav-list--open');
+    });
 });

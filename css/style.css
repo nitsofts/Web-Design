@@ -4,12 +4,10 @@ body {
     margin: 0;
     padding: 0;
     color: #000;
-    width: 100%;
 }
 
-a {
+a{
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 a:hover {
@@ -18,10 +16,9 @@ a:hover {
 
 .container {
     width: 100%;
-    margin: 0 auto; /* This centers the container horizontally */
-    box-sizing: border-box;
+    margin: 0 auto;
     padding: 5px 9%;
-    font-size: 2rem;
+    font-size: .3rem;
 }
 
 .btn {
@@ -36,50 +33,45 @@ a:hover {
     background-color: #0056b3;
 }
 
-/* Header Styles */
-header {
-    display: flex;
-    justify-content: space-between;
+.header {
+    display:flex;
     align-items: center;
-    padding: 33px 9%;
     background-color: #ffffff;
-    border-bottom: 1px solid #e7e7e7;
+
+    padding: 5px 9%;
 }
 
-header .header-left img {
-    margin-top: 15px;
-    max-width: 45% ;
-}
-
-header .header-right{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-header nav ul {
+.header-nav ul {
     list-style: none;
+    padding: 0;
     display: flex;
     gap: 20px;
-    align-items: center;
 }
 
-header nav ul li,
-header nav ul a {
+.header-nav a {
+    color: #333;
     font-weight: bold;
-    color: #000;
-    font-size: 20px;
+    font-size: .8rem;
 }
 
-.header-btn-contact{
-    background-color: #000;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    color: #fff;
-    cursor: pointer;
+.middle{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+.right{
+    background-color: #007BFF;
+    border-radius: 5px;
+    flex-grow: 0;
+} 
+
+.left, img{
     display: flex;
     align-items: center;
+    background-color: #007BFF;
+    max-width: 100%;
+    width: 150px;
+    height: auto;
 }
 
 
@@ -199,325 +191,6 @@ header nav ul a {
     margin: 0 0 30px 0; /* Add some margin to separate the heading from the grid */
 }
 
-
-/*Testimonial Page*/
-/*Rating*/
-.contents {
-    display: flex;
-    padding: 10px 0px;
-    gap: 25px;
-}
-
-.ratings {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    padding: 25px 50px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-family: Arial, sans-serif;
-    height:400px;
-    width: 200px;
-}
-
-.logo-container img {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    background-color: #d5e9f1;
-}
-
-.ratings h2 {
-    font-size: 1.5rem;
-    margin: 10px 0 5px;
-}
-
-.ratings p {
-    font-size: 1rem;
-    color: #666;
-    margin: 5px 0 15px;
-}
-
-.ratings button {
-    background-color: #2D92F2;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
-    margin-bottom: 15px;
-    font-size: 1rem;
-}
-
-.total-rating {
-    margin-bottom: 15px;
-}
-
-.total-rating span {
-    display: block;
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-}
-
-.stars {
-    color: #ffcc00;
-    font-size: 1.5rem;
-}
-
-.rating-seekbar {
-    width: 100%;
-    margin-top: 15px;
-}
-
-.rating-seekbar span {
-    display: block;
-    font-size: 1.25rem;
-    margin-top: 1fpx;
-}
-
-.trust-bar {
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    overflow: hidden;
-    height: 10px;
-    flex-grow: 1;
-    margin: 0 10px;
-}
-
-.trust-level {
-    background-color: #4caf50;
-    height: 100%;
-    border-radius: 5px 0 0 5px;
-}
-
-.rating-seekbar span:last-child {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-/*Reviews*/
-/* Reviews Section */
-.reviews {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.reviews h6 {
-    font-size: 1.25rem;
-    margin-bottom: 5px;
-}
-
-.review-card {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.review-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.review-header img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-.review-header strong {
-    font-size: 1rem;
-    margin: 0;
-}
-
-.review-header span {
-    font-size: 0.875rem;
-    color: #666;
-}
-
-.review-rating {
-    margin-left: auto;
-    text-align: right;
-}
-
-.review-rating span {
-    display: block;
-    font-size: 0.875rem;
-    color: #666;
-}
-
-.review-card p {
-    font-size: 1rem;
-    color: #333;
-    margin: 0;
-}
-
-.see-more {
-    display: inline-block;
-    margin-top: 10px;
-    font-size: 1rem;
-    color: #007bff;
-    text-decoration: none;
-    text-align: right;
-}
-
-.see-more:hover {
-    text-decoration: underline;
-}
-
-
-
-
-/* About Us Section Styles */
-.about {
-    padding: 60px 0;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-.about h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.about p {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-/* Location section styling */
-.location {
-    margin: 20px 0;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-}
-
-/* Location headings */
-.location h2 {
-
-    margin-bottom: 10px;
-    font-size: 1.5em;
-}
-
-.location h3 {
-    margin-bottom: 5px;
-    font-size: 1.2em;
-}
-.location ul li {
-    margin-bottom: 10px;
-}
-
-/* Map placeholder styling */
-.map {
-    flex: 1;
-    width: 90%;
-    height: 450px;
-    background-color: #ddd;
-    border-radius: 8px;
-    overflow: hidden;}
-
-/* Image within the map placeholder */
-.map img {
-    width: 100%;
-    height: 200%;
-   
-}
-
-/* Temporary information request section */
-.temp {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #e9e9e9;
-    border-radius: 8px;
-}
-
-.temp h2 {
-    margin-bottom: 10px;
-    font-size: 1.5em;
-}
-
-
-/* Link styling */
-.temp a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.temp a:hover {
-    text-decoration: underline;
-}
-
-/* Gallery Preview Section Styles */
-.gallery-preview {
-    padding: 60px 0;
-}
-
-.gallery-preview h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.gallery-preview .gallery-preview-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.gallery-preview .featured-image img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.gallery-preview .featured-image img:hover {
-    transform: scale(1.05);
-}
-
-/* Booking Section Styles */
-/* Book Now Section Styles */
-.booking {
-    padding: 60px 0;
-    text-align: center;
-    background-image: url('../images/book-now-background.jpg'); /* Replace with your actual image path */
-    background-size: cover;
-    background-position: center;
-    color: #fff; /* Ensure the text is readable on the background */
-}
-
-.booking h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.booking .btn {
-    background-color: rgb(202, 164, 164);
-    color:black;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.booking .btn:hover {
-    background-color: #0fe7a3;
-}
-
-
 /* Footer Part */
 footer {
     background-color: #1e1d1d;
@@ -537,173 +210,111 @@ footer {
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin-bottom: 30px;
-    margin-top: 50px;
+    gap: 25px;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 .social-icons a {
     color: #fff; /* This makes the icons white */
-    font-size: 50px;
+    font-size: 1rem;
 }
 
-nav ul {
+.footer-nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 50px;
-    margin-bottom: 50px;
+    gap: 25px;
+    margin-top: 0px;
+    margin-bottom: 25px;
 }
 
-nav ul li a {
-    text-decoration: none;
+.footer-nav a {
     color: #fff;
-    font-weight: bold;
-    font-size: 20px;
+    font-weight: normal;
+    font-size: .7rem;
 }
 
 .footer-credits {
     background-color: #000;
-    font-size: 22px;
+    font-size: .6rem;
     max-width: 100%;
     width: 100%;
     text-align: center;
-    padding: 10px 0px;
-}
-/* Career Page Styles */
-
-/* Hero Section */
-.career-hero {
-    background: url('../Images/career-banner.jpg') no-repeat center center/cover;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+    padding: 5px 0px;
 }
 
-.career-hero .overlay {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+/*Footer Responsiveness*/
+@media (max-width: 1200px) {
+    .social-icons a {
+        font-size: 0.9rem;
+    }
+
+    footer nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .footer-credits {
+        font-size: 0.7rem;
+    }
 }
 
-/* Job Listings */
-.job-listing {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    background: #fff;
+@media (max-width: 992px) {
+    .social-icons {
+        gap: 20px;
+    }
+
+    .social-icons a {
+        font-size: 0.7rem;
+    }
+
+    footer nav ul li a {
+        font-size: 0.7rem;
+    }
+
+    .footer-credits {
+        font-size: 0.5rem;
+    }
 }
 
-.job-listing h3 {
-    margin-top: 0;
-    font-weight: bold;
-}
-
-/* Application Process */
-#application-process ol {
-    list-style-type: decimal;
-    margin-left: 20px;
-}
-
-/* FAQs */
-#faqs details {
-    background: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#faqs details summary {
-    font-weight: bold;
-    cursor: pointer;
-}
-
-/* Contact Us */
-#contact form {
-    margin-bottom: 20px;
-}
-
-#contact form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-#contact form input[type="text"],
-#contact form input[type="email"],
-#contact form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#contact form textarea {
-    height: 150px;
-}
-
-#contact form button {
-    background-color: #e67e22;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#contact form button:hover {
-    background-color: #d35400;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
-    .job-listing {
-        padding: 15px;
+    .social-icons {
+        flex-direction: flex;
+        gap: 15px;
     }
 
-    #application-process ol {
-        margin-left: 0;
+    .social-icons a {
+        font-size: 0.9rem;
     }
 
-    #faqs details {
-        padding: 15px;
+    footer nav ul {
+        flex-direction: grid;
+        gap: 10px;
     }
 
-    #contact form input[type="text"],
-    #contact form input[type="email"],
-    #contact form textarea {
-        width: calc(100% - 20px);
+    footer nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    .footer-credits {
+        font-size: 0.5rem;
     }
 }
 
-/* Booking Section Styles */
+@media (max-width: 576px) {
+    .footer-container {
+        padding: 0px;
+    }
 
-.booking {
-    padding: 60px 20px;
-    text-align:justify;
-    color:black; /* Ensure the text is readable on the background */
+    .social-icons a {
+        font-size: 0.8rem;
+    }
+
+    footer nav ul li a {
+        font-size: 0.6rem;
+    }
+
+    .footer-credits {
+        font-size: 0.4rem;
+    }
 }
-
-.booking h2 {
-    font-size: 2rem;
-    margin-bottom: 2px;
-    height: auto;
-    width: auto;
-}
-
-.booking .btn {
-    background-color: #007BFF;
-    color: black;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.booking .btn:hover {
-    background-color: #14f02e;
-}
-
