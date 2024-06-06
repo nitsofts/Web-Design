@@ -1,36 +1,137 @@
-.team {
-    color: rgb(13, 12, 12); /* Sets the text color to white for better visibility */
-     /* Aligns the text content to the center */
-    padding: 30px 0; /* Adds padding to the top and bottom of the container */
+.career{
+    display: flex;
+    flex-direction: column;
 }
 
-.team h1 {
-    font-size: 50px;
-    text-align: center; /* Adjusts the font size of the heading */
+.career-contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 }
 
-.team p {
-    font-size: 20px;
-    text-align: center; /* Adjusts the font size of the paragraph */
+.page-title{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.career-contents p{
+    font-size: 1rem;
 }
 
 
-
-.available-jobs {
-    text-align: justify; /* Center-align the text */
-    font-size: 20px;
+/* Search Bar Styles */
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    gap: 10px;
+    max-width: 80%;
+    border: 1.5px solid #e9e9e9;
 }
 
+.search input,
+.search select {
+    padding: 10px;
+    border: 1.5px solid #e9e9e9;
+    border-radius: 4px;
+    width: 30%;
+}
 
-.job-filters select {
-    width: 50%; /* Set the width of the select element to 100% */
-    padding: 10px; /* Add padding for better spacing */
-    font-size: 20px; /* Adjust the font size as needed */
+.search button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
-.locations {
-    font-size: 20px;
+
+.search button:hover {
+    background-color: #0056b3;
 }
-.perks{
-    font-size: 20px;
+
+/* Job Listing Styles */
+.job-listing {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+}
+
+.job-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
     padding: 20px;
+    border-radius: 8px;
+    border: 1.5px solid #e9e9e9;
+}
+
+.job-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.job-details h5{
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+.job-details span{
+    font-size: .9rem;
+}
+
+
+.job-icon{
+    background-color: #f4f4f4;
+    padding: 10px 12.5px;
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.job-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.job-filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.job-tags span {
+    background-color: #f4f4f4;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.6rem;
+    font-weight: bold;
+}
+
+.job-filter {
+    text-align: right;
+}
+
+.job-filter button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.job-filter button:hover {
+    background-color: #0056b3;
 }

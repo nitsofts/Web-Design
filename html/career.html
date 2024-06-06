@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Careers - SydRent</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/career.css">
     <link rel="icon" href="../Images/Logo - FavIcon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Header Starts Here -->
@@ -24,7 +26,7 @@
                     <li><a href="../html/services.html">Services</a></li>
                     <li><a href="../html/gallery.html">Gallery</a></li>
                     <li><a href="../html/partner.html">Partners</a></li>
-                    <li><a href="../html/career.html">Career</a></li>
+                    <li><a href="../html/career.html"  class="active">Career</a></li>
                     <li><a href="../html/testimonial.html">Reference</a></li>
                 </ul>
             </nav>
@@ -51,125 +53,113 @@
         </ul>
     </div>
     <!--Header Ends Here-->
-    <main>
-        <div class="team">
-            <h1>Join the Team</h1>
-            <p class ="lead">Relaxed Atmosphere, Best Working Environment, Top Notch Projects...</p>
-        </div>
-        <div class="available-jobs">
-            <h2>Available Jobs</h2>
-            <div class="job-filters">
-                <select id="location-filter">
-                    <option value="all">All Locations</option>
-                    <option value="sydney">Sydney</option>
-                    <option value="melbourne">Melbourne</option>
-                    <option value="perth">Perth</option>
-                    <option value="canberra">Canberra</option>
-                </select>
-                
-                <div id="job-listings">
-                    <div class="job-listing" data-location="sydney">
-                        <h3>Full Stack Developer</h3>
-                        <p>Location: Sydney</p>
-                        <p>We are looking for a Full Stack Developer to produce scalable software solutions. You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception to deployment.
 
-                            As a Full Stack Developer, you should be comfortable around both front-end and back-end coding languages, development frameworks and third-party libraries. You should also be a team player with a knack for visual design and utility.
-                            
-                            If you're also familiar with Agile methodologies, we'd like to meet you..</p>
-                            <h5>Responsibilities</h5>
-                            <ul>
-                                <li>Work with development teams and product managers to ideate software solutions
-                                </li>
-                                <li>Design client-side and server-side architecture
-                                </li>
-                                <li>Write effective APIs
-                                </li>
-                            </ul>
-                        <a href="#" class="button">Apply Now</a> </div>
-                    
-                    <div class="job-listing" data-location="melbourne">
-                        <h3>iOS/Swift Developer</h3>
-                        <p>Location: Melbourne</p>
-                        <p>In the iOS developer role, you will write and debug code using either official Apple programming languages, such as Swift and Objective-C, or other compatible languages. You must maintain a good understanding of mobile application frameworks and stay up to date with the latest iOS trends and changes. Success in this role will be demonstrated by launching new applications and enhancing existing applications to attract new users and retain customers.</p>
-                        
-                     
-                    <h5>iOS Developer Job Responsibilities and Duties</h5>
-                    <ul>
-                        <li>Creates high-quality, UX-rich iOS apps</li>
-                        <li>Deploys major app enhancements</li>
-                        <li>Documents process throughout the app life cycle</li>
-                    </ul>
-                    <a href="#" class="button">Apply Now</a> </div>
-                    <div class="job-listing" data-location="perth">
-                        <h3>JavaScript Developer</h3>
-                        <p>Location: Perth</p>
-                        <p>We are looking for a JavaScript Developer who is motivated to combine the art of design with the art of programming. Responsibilities will include implementing visual elements and their behaviors with user interactions. You will work with both front-end and back-end web developers to build all client-side logic. You will also be bridging the gap between the visual elements and the server-side infrastructure, taking an active role on both sides, and defining how the application looks and functions.
-                        </p>
-                        <h5>Responsibilities and Duties</h5>
-                        <ul>
-                            <li>Develop new user-facing features</li>
-                            <li>Collaborate with other team members and stakeholders</li>
-                            <li>Optimize applications for maximum speed and scalability</li>
-                            <li>Ensure the technical feasibility of UI/UX designs</li>
-                        </ul>
-                        <a href="#" class="button">Apply Now</a> 
-
-                    </div>
-                    
-                    <div class="job-listing" data-location="canberra">
-                        <h3>Ruby on Rails Programmer</h3>
-                        <p>Location: Canberra</p>
-                        <p>We are looking for a Ruby on Rails developer responsible for managing the interchange of data between the server and the users. Your primary focus will be development of all server-side logic, definition and maintenance of the central database, and ensuring high performance and responsiveness to requests from the front-end. You will also be responsible for integrating the front-end elements built by your co-workers into the application. Therefore, a basic understanding of front-end technologies is necessary as well.
-
-                        </p>
-                        <h5>Responsibilities
-                        </h5>
-                        <ul>
-                            <li>Design, build, and maintain efficient, reusable, and reliable Ruby code</li>
-                            <li>Identify bottlenecks and bugs, and devise solutions to these problems</li>
-                            <li>Integration of user-facing elements developed by front-end developers with server side logic</li>
-                        </ul>
-                        <a href="#" class="button">Apply Now</a> 
-
-                    </div>
-                    
+    <main class="container">
+        
+        <div class="career">
+            <h3 class="page-title">Career at SydRent</h3>
+            <p>
+                Join our dynamic team and drive your career forward with exciting opportunities at SydRent. Explore our current openings and become a part of a company committed to providing exceptional car rental services. We offer competitive salaries and a supportive work environment to help you succeed. Apply today and embark on a rewarding journey with us!
+            </p>
+            <div class="career-contents">
+                 <!-- Search Bar -->
+                <div class="search">
+                    <input type="text" placeholder="Job Title">
+                    <input type="text" placeholder="Location">
+                    <select>
+                        <option value="" disabled selected>Job Type</option>
+                        <option value="fulltime">Full Time</option>
+                        <option value="parttime">Part Time</option>
+                        <option value="remote">Remote</option>
+                    </select>
+                    <button>Search</button>
                 </div>
-                 
-                 
+        
+                <!-- Job Listings -->
+                <div class="job-listing">
+                    <!--Job 1-->
+                    <div class="job-card">
+                        <div class="job-details">
+                            <div class="job-icon">
+                                <img src="../images/career/career-job1.png">
+                            </div>
+                            <h5>Customer Service Representative</h5>
+                            <span>$3K~4K / Month</span>
+                        </div>
+                        <div class="job-filter">
+                            <div class="job-tags">
+                                <span>Casual</span>
+                                <span>Interactive</span>
+                                <span>Remote</span>
+                            </div>
+                            <button>Apply Now</button>
+                        </div>
+                    </div>
+
+                    <!--Job 2-->
+                    <div class="job-card">
+                        <div class="job-details">
+                            <div class="job-icon">
+                                <img src="../images/career/career-job2.png">
+                            </div>
+                            <h5>Fleet Manager</h5>
+                            <span>$5K~6K / Month</span>
+                        </div>
+                        <div class="job-filter">
+                            <div class="job-tags">
+                                <span>Fulltime</span>
+                                <span>Managing</span>
+                                <span>Sydney</span>
+                            </div>
+                            <button>Apply Now</button>
+                        </div>
+                    </div>
+
+                    <!--Job 3-->
+                    <div class="job-card">
+                        <div class="job-details">
+                            <div class="job-icon">
+                                <img src="../images/career/career-job3.png">
+                            </div>
+                            <h5>Sales and Marketing Specialist</h5>
+                            <span>$6K~7K / Month</span>
+                        </div>
+                        <div class="job-filter">
+                            <div class="job-tags">
+                                <span>Part-Time</span>
+                                <span>Sales</span>
+                                <span>Melbourne</span>
+                            </div>
+                            <button>Apply Now</button>
+                        </div>
+                    </div>
+
+                    <!--Job 4-->
+                    <div class="job-card">
+                        <div class="job-details">
+                            <div class="job-icon">
+                                <img src="../images/career/career-job4.png">
+                            </div>
+                            <h5>Logistics Coordinator</h5>
+                            <span>$4K~5K / Month</span>
+                        </div>
+                        <div class="job-filter">
+                            <div class="job-tags">
+                                <span>Fulltime</span>
+                                <span>Stockings</span>
+                                <span>Brisbane</span>
+                            </div>
+                            <button>Apply Now</button>
+                        </div>
+                    </div>
+                
+                </div>
             </div>
         </div>
-    
-     
-        <div class="perks">
-            <h2>Perks</h2>
-            <ul>
-                <li>Flexible Work Hours</li>
-                <li>Healthcare</li>
-                <li>Room to Grow</li>
-                <!-- Add more perks here -->
-            </ul>
-        </div>
-        <div class="locations">
-            <h2>Our Locations</h2>
-            <div class="location-content"></div>
-        </div>
-    
-        <script>
-            window.onload = function() {
-                var xhr = new XMLHttpRequest();
-                xhr.open('GET', '../html/locations.html', true);
-                xhr.onreadystatechange = function() {
-                    if (xhr.readyState == 4 && xhr.status == 200) {
-                        document.querySelector('.location-content').innerHTML = xhr.responseText;
-                    }
-                };
-                xhr.send();
-            };
-        </script>
     </main>
     
 
-    <!-- Footer Section -->
+    <!-- Footer Starts Here -->
     <footer>
         <div class="footer-container">
             <div class="social-icons">
@@ -179,7 +169,7 @@
                 <a href="https://google.com"><i class="fab fa-google-plus"></i></a>
                 <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
             </div>
-            <nav>
+            <nav class="footer-nav">
                 <ul>
                     <li><a href="../html/index.html">Home</a></li>
                     <li><a href="../html/about.html">About Us</a></li>
@@ -191,10 +181,12 @@
                 </ul>
             </nav>
             <div class="footer-credits">
-                <p>&copy; 2024, Designed by SydRent</p>
+                <p>Copyright ©2024, Designed by SydRent</p>
             </div>
         </div>
     </footer>
+    <!-- Footer Ends Here -->
+    <script src="../js/scripts.js"></script>
     <script src="../js/career.js"></script>
 </body>
 </html>

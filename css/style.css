@@ -15,10 +15,11 @@ a{
 }
 
 .container {
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 5px 9%;
-    font-size: .3rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .btn {
@@ -38,6 +39,7 @@ a{
     align-items: center;
     background-color: #ffffff;
     padding: 20px 9%;
+    border-bottom: .5px solid #e1f5fe;
 }
 
 .header-nav ul {
@@ -51,6 +53,11 @@ a{
     color: #333;
     font-weight: normal;
     font-size: .8rem;
+}
+
+.header-nav .active{
+    font-weight: bold;
+    color: #007BFF;
 }
 
 .middle{
@@ -146,7 +153,6 @@ a{
 
 
 }
-
 @media (max-width: 625px) {
 
     .header{

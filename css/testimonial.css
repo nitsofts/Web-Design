@@ -2,7 +2,7 @@
 /*Rating*/
 
 .container{
-    background-color: #f6f6f6;
+    background-color: #fff;
 }
 
 .container h6{
@@ -10,7 +10,7 @@
     margin-bottom: 10px;
 }
 
-.contents {
+.testimonial {
     display: flex;
     padding: 10px 0px;
     gap: 25px;
@@ -22,13 +22,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
-    padding: 25px 50px;
+    padding: 0px 25px;
     border-radius: 10px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-family: Arial, sans-serif;
-    height:400px;
+    height:375px;
     width: 200px;
 }
 
@@ -37,17 +36,18 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    margin-top: 10px;
     margin-bottom: 15px;
     background-color: #d5e9f1;
 }
 
 .ratings h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 10px 0 5px;
 }
 
 .ratings p {
-    font-size: 1rem;
+    font-size: .8rem;
     color: #666;
     margin: 5px 0 15px;
 }
@@ -60,7 +60,7 @@
     padding: 10px 15px;
     cursor: pointer;
     margin-bottom: 15px;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 .total-rating {
@@ -69,13 +69,13 @@
 
 .total-rating span {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 5px;
 }
 
 .stars {
     color: #ffcc00;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .rating-seekbar {
@@ -85,8 +85,9 @@
 
 .rating-seekbar span {
     display: block;
-    font-size: 1.25rem;
-    margin-top: 1fpx;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .trust-bar {
@@ -105,7 +106,7 @@
 }
 
 .rating-seekbar span:last-child {
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: bold;
 }
 
@@ -183,4 +184,15 @@
 
 .see-more:hover {
     text-decoration: underline;
+}
+
+/*Responsiveness*/
+
+@media (max-width:625px){
+    .testimonial{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
 }

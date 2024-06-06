@@ -9,8 +9,7 @@
     margin-bottom: 40px;
 }
 
-.partner {
-
+.partner-item {
     width: 150px;
     height: auto;
     display: flex;
@@ -22,8 +21,8 @@
     gap: 20px;
 }
 
-.partners p{
-    font-size: 1.5rem;
+.partner p{
+    font-size: 1rem;
 }
 
 .partner img {
