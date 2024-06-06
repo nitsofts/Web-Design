@@ -32,7 +32,9 @@ Ujjwal:
 8) create html files (about, career , contact gallery , reservation , services , vehicle)
 9) added deals.html
 10) fixed career.css and career.html
-11) fixed on location.html and css
+11) fixed  and update location.html and css 
+
+
 Sanup:
 1)Motivated my kta haru to do assignment.
 
