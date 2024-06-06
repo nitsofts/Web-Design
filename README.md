@@ -30,6 +30,8 @@ Ujjwal:
 6) added some pictures for gallery and index page
 7) created resoponse of each button
 8) create html files (about, career , contact gallery , reservation , services , vehicle)
+9) added deals.html
+10) fixed career.css and career.html
 
 Sanup:
 1)Motivated my kta haru to do assignment.
