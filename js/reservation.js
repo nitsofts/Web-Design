@@ -51,5 +51,5 @@ function proceedForPayment() {
 }
 
 function cancelBooking() {
-    window.location.href = "index.html";
+    window.location.href = "../html/index.html";
 }

@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 const redirects = {
-    '/home': '/html/index.html',
-    '/about': '/html/about.html',
-    '/services': '/html/services.html',
-    '/gallery': '/html/gallery.html',
-    '/partner': '/html/partner.html',
-    '/career': '/html/career.html',
-    '/testimonial': '/html/testimonial.html',
-    '/contact': '/html/contact.html'
+    '/home': '../html/index.html',
+    '/about': '../html/about.html',
+    '/services': '../html/services.html',
+    '/gallery': '../html/gallery.html',
+    '/partner': '../html/partner.html',
+    '/career': '../html/career.html',
+    '/testimonial': '../html/testimonial.html',
+    '/contact': '../html/contact.html'
 };
 
 const path = window.location.pathname;
